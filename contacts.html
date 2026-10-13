@@ -4,65 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
     <header>
         <img src="images/logo.jpg" alt="Логотип сайта" width="80">
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html" >Контакты</a></li>
-            </ul>
+        <ol class="breadcrumbs">
+            <li><a class="crumb" href="index.html">Главная</a></li>
+            <li><span class="crumb" aria-current="page">Контакты</span></li>
+        </ol>
         </nav>
     </header>
 <main>
-    <h2>Contact Us</h2>
-    <p>Свяжитесь с мной</p>
+    <h2 class="heading2">Contact Us</h2>
+    <p class="paragraph">Свяжитесь с мной</p>
 
     <img src="images/logo.jpg" alt="Изображение" width="300">
 
-    <h4>Address</h4>
-    <p>Тюмень</p>
+    <h4 class="heading4">Address</h4>
+    <p class="paragraph">Тюмень</p>
 
-    <h4>Phone</h4>
+    <h4 class="heading4">Phone</h4>
     <ul>
         <li>+7 (800) 535 35 35</li>
         <li>+7 (801) 535 35 35</li>
     </ul>
 
-    <h4>Online service</h4>
+    <h4 class="heading4">Online service</h4>
     <ul>
         <li><a href="https://utmn.modeus.org/">Сайт</a></li>
         <li><a href="https://360.yandex.ru/mail/">Электронная почта</a></li>
     </ul>
 
-    <p>Адрес: ул. Красина 19. Телефон: +7 (800) 788 89 00.</p>
-    <h4>Send us message</h4>
+    <p class="paragraph">Адрес: ул. Красина 19. Телефон: +7 (800) 788 89 00.</p>
+    <h4 class="heading4">Send us message</h4>
 
-<form>
-    <p>
+<form class="message">
+    <p class="paragraph">
         <label for="full-name">Full Name</label><br>
-        <input type="text" id="full-name" name="full-name">
+        <input type="text" id="full-name" name="full-name" class="field">
     </p>
 
-    <p>
+    <p class="paragraph">
         <label for="email">Email</label><br>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" class="field">
     </p>
 
-    <p>
+    <p class="paragraph">
         <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <textarea id="message" name="message" rows="5" cols="30" class="field"></textarea>
     </p>
 
-    <button type="submit">submit</button>
+    <button type="submit" class="submit">submit</button>
 </form>
 </main>
 
 <hr>
 <footer>
-    <h3>Для связи со мной</h3>
-    <p>Можете связаться со мной по номеру или почте</p>
+    <h3 class="heading3">Для связи со мной</h3>
+    <p class="paragraph">Можете связаться со мной по номеру или почте</p>
     <hr>
 
     <ul>
@@ -71,7 +72,7 @@
         <li>Email: aleksanigam@gmail.com</li>
     </ul>
 
-    <p>Все права защищены</p>
+    <p class="paragraph">Все права защищены</p>
 </footer>
 </body>
 </html>
