@@ -1,52 +1,271 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
-    <link rel="stylesheet" href="src/assets/styles/style.css">
+    <title>Application Development</title>
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="Логотип сайта" width="80">
-
+    <header class="header">
+        <a href="index.html">IT WEBSITE</a>
+        <nav class="navigation">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="#development">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
+        </nav>
 
-        <ol class="breadcrumbs">
-            <li>
-                <span class="crumb" aria-current="page">Главная</span>
-            </li>
-        </ol>
+        <div class="header-contacts">
+            <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+            <a href="tel:+79111111111">+7 (911) 111-11-11</a>
+            <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+        </div>
     </header>
-<main>
-    <h1 class="heading">Лабораторная номер один</h1>
-    <p class="paragraph italic">Я учусь в ТюмГУ</p>
 
-    <h3 class="heading3">О учебе в ТюмГУ</h3>
+    <hr>
+    <main>
+        <section class="intro">
+            <div class="intro-description">
+                <h1>Development of mobile applications and web services of any complexity</h1>
+                <p>We create mobile applications for ios, Android that transfer your business to mobile applications of your cusromers devices</p>
+            </div>
 
-    <h4 class="heading4">Я создаю html страницу</h4>
-    <p class="paragraph">Я учусь на прикладной информатике, 3 курс</p>
+            <div class="intro-request">
+                <h2>Leave your contact details and we will call you back within 30 minutes</h2>
 
-    <h3 class="heading3">Я учусь в ТюмГУ</h3>
-    <p class="paragraph">Тут произвольный текст не более 10 слов.</p>
-</main>
+                <form class="intro-form">
+                    <div class="intro-fields">
+                        <p>
+                            <label for="intro-phone">Phone number</label><br>
+                            <input type="tel" id="intro-phone" name="phone">
+                        </p>
 
-<hr>
-<footer>
-    <h3 class="heading3">Для связи со мной</h3>
-    <p class="paragraph">Можете связаться со мной по номеру или почте</p>
+                        <p>
+                            <label for="intro-name">Your name</label><br>
+                            <input type="text" id="intro-name" name="name">
+                        </p>
+
+                        <button type="submit">Get a consultation</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="development" id="development">
+            <div class="development-description">
+                <h2>Full Development cycle</h2>
+                <p>We use modern technologies</p>
+
+                <h3>Web</h3>
+                <p>PHP/ JavaScript / ...</p>
+
+                <h3>Mobile Development</h3>
+                <p>Swift, Kotlin, Java.</p>
+            </div>
+
+            <ul class="development-services">
+                <li class="service">
+                    <a href="#discussion">iOS development</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">Android development</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">Web development</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">UI/UX design</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">Testing</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">Launch</a>
+                </li>
+                <li class="service">
+                    <a href="#discussion">IT consulting</a>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="industries">
+            <h2>Development more than 100 projects in 15 industries</h2>
+
+            <ul class="industries-list">
+                <li class="industry">Social media</li>
+                <li class="industry">Fitness and sports</li>
+                <li class="industry">Bank</li>
+                <li class="industry">...</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="projects" id="projects">
+            <h2>Projects we are proud of</h2>
+            <p>Our software development company is truly proud of the wonderful clients we have worked with.</p>
+
+            <nav class="projects-navigation">
+                <ul>
+                    <li><a href="#iteka">I-teka</a></li>
+                    <li><a href="#discussion">...</a></li>
+                </ul>
+            </nav>
+            
+            <article class="project" id="iteka">
+                <div class="project-description">
+                    <h2>I-teka</h2>
+                    <p>The application...</p>
+
+                    <p>Business analysis / iOS / Android development</p>
+
+                    <div class="project-links">
+                        <a href="https://www.apple.com/app-store/">App Store</a>
+                        <a href="https://play.google.com/store">Google Play</a>
+                    </div>
+                </div>
+                <img src="images/project.jpg" alt="I-teka mobile application" width="300">
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="discussion" id="discussion">
+            <div class="discussion-description">
+                <h2>Let's discuss Your project</h2>
+                <p>Lets figure...</p>
+            </div>
+
+            <form class="discussion-form">
+                <p>
+                    <label for="discussion-phone">Phone number</label><br>
+                    <input type="tel" id="discussion-phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="discussion-name">Your name</label><br>
+                    <input type="text" id="discussion-name" name="name">
+                </p>
+
+                <button type="submit">Discuss the project</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="stages">
+            <h2>Application Development Stages</h2>
+
+            <div class="stages-list">
+                <article class="stage">
+                    <h3>Analysis</h3>
+                    <p>We study business goals and application requirements.</p>
+                </article>
+
+                <article class="stage">
+                    <h3>...</h3>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="team" id="team">
+            <div class="team-description">
+                <h2>Our Team</h2>
+                <p>We best team</p>
+
+                <ul class="team-statistics">
+                    <li>28 team members</li>
+                    <li>Over 100 projects</li>
+                    <li>7 years in IT</li>
+                </ul>
+
+                <p>Our team includes analysts, designers, developers and testers.</p>
+            </div>
+
+            <div class="team-media">
+                <img src="images/team.jpg" alt="Our development team" width="300">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="book">
+            <div class="book-description">
+                <h2>Get the book for free</h2>
+
+                <form class="book-form">
+                    <p>
+                        <label for="book-phone">Phone number</label><br>
+                        <input type="tel" id="book-phone" name="phone">
+                    </p>
+
+                    <p>
+                        <label for="book-name">Your name</label><br>
+                        <input type="text" id="book-name" name="name">
+                    </p>
+
+                    <p>
+                        <label for="book-email">Email</label><br>
+                        <input type="email" id="book-email" name="email">
+                    </p>
+
+                    <button type="submit">Get the book</button>
+                </form>
+            </div>
+
+        <div class="book-image">
+            <img src="images/book.jpg" alt="Book cover" width="200">
+        </div>
+        </section>
+
+        <hr>
+
+        <section class="faq" id="faq">
+            <h2>FAQ</h2>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>How much does application development cost?</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <hr>
 
-    <ul>
-        <li>Мои контакты</li>
-        <li>Телефон: +7 (000) 000 00 00</li>
-        <li>Email: aleksanigam@gmail.com</li>
-    </ul>
+    <footer class="footer" id="contacts">
+        <h2>IT WEBSITE</h2>
 
-    <p class="paragraph">Все права защищены</p>
-</footer>
+        <div class="footer-contacts">
+            <div class="footer-phone">
+                <h3>Contact nums</h3>
+                <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+            </div>
+
+            <div class="footer-email">
+                <h3>Post</h3>
+                <a href="mailto:info@example.com">info@example.com</a>
+            </div>
+
+            <div class="footer-address">
+                <h3>Address</h3>
+                <p>19 Krasina Street, Tyumen</p>
+            </div>
+
+            <div class="footer-request">
+                <h3>Leave a request</h3>
+                <a href="#discussion">Leave a request</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
